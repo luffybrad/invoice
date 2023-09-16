@@ -1,17 +1,23 @@
 package Invoice;
+
 public class invoice {
+
 	public static void main(String[] args) {
-		String sold_to="C026-01-0903/2022";
-		String address="Collins Waweru";
+		// TODO Auto-generated method stub
+		
+		//variable declarations
+		String sold_to="C026-01-0917/2022", address="Bradley Kahoro";
 		String date="28/04/2020";
 		String contact_num="0100100100";
-		int quantity1=4, quantity2=10, quantity3=9, quantity4=10;
-		String item_description1="Pencil", item_description2="Duster", item_description3="Pens", item_description4="crayon";
+		int qty1=4, qty2=10, qty3=9, qty4=10;
+		String item_desc1="Pencil", item_desc2="Duster", item_desc3="Pens", item_desc4="crayon";
 		int unit_price1=20, unit_price2=50, unit_price3=30, unit_price4=80;
-		float amount1=quantity1*unit_price1, amount2=quantity2*unit_price2, amount3=quantity3*unit_price3, amount4=quantity4*unit_price4;
-		float subtotal_amount=amount1+amount2+amount3+amount4;
-		double vat= 0.16*subtotal_amount;
-		double total_amount=vat+subtotal_amount;
+		float amt1=qty1*unit_price1, amt2=qty2*unit_price2, amt3=qty3*unit_price3, amt4=qty4*unit_price4;
+		float subttl_amt=amt1+amt2+amt3+amt4;
+		double vat_tax= 0.16*subttl_amt;
+		double total_amt=vat_tax+subttl_amt;
+		
+		//output formatting
 		System.out.println("**************************Adamson Computers Ltd*************************");
 		System.out.println("#99 ACS Building Gilmore Ave. New Mla.. Quezon City  *  Tel. No:123-4567");
 		System.out.println("                 VAT REG. TIN 098-765-4321-0000");
@@ -21,20 +27,22 @@ public class invoice {
 		System.out.println("=========================================================================");
 		System.out.println("Qty     |     Item Description     |     Unit Price     |Amount");
 		System.out.println("=========================================================================");
-		System.out.println(quantity1+"       |          "+item_description1+"          |         "+unit_price1+"         |"+String.format("%.2f",amount1));
+		System.out.println(qty1+"       |          "+item_desc1+"          |         "+unit_price1+"         |"+String.format("%.2f",amt1));
 		System.out.println("-------------------------------------------------------------------------");
-		System.out.println(quantity2+"      |          "+item_description2+"          |         "+unit_price2+"         |"+String.format("%.2f",amount2));
+		System.out.println(qty2+"      |          "+item_desc2+"          |         "+unit_price2+"         |"+String.format("%.2f",amt2));
 		System.out.println("-------------------------------------------------------------------------");
-		System.out.println(quantity3+"       |           "+item_description3+"           |         "+unit_price3+"         |"+String.format("%.2f",amount3));
+		System.out.println(qty3+"       |           "+item_desc3+"           |         "+unit_price3+"         |"+String.format("%.2f",amt3));
 		System.out.println("-------------------------------------------------------------------------");
-		System.out.println(quantity4+"      |          "+item_description4+"          |         "+unit_price4+"         |"+String.format("%.2f",amount4));
+		System.out.println(qty4+"      |          "+item_desc4+"          |         "+unit_price4+"         |"+String.format("%.2f",amt4));
 		System.out.println("=========================================================================");
-		System.out.println("                                          |Sub Total    |"+String.format("%.2f",subtotal_amount));
+		System.out.println("                                          |Sub Total    |"+String.format("%.2f",subttl_amt));
 		System.out.println("                                          ===============================");
-		System.out.println("                                          |VAT(16%)     |"+String.format("%.2f",vat));
+		System.out.println("                                          |VAT(16%)     |"+String.format("%.2f",vat_tax));
 		System.out.println("                                          ===============================");
-		System.out.println("                                          |Total Amount |"+String.format("%.2f",total_amount));
+		System.out.println("                                          |Total Amount |"+String.format("%.2f",total_amt));
 		System.out.println("                                          ===============================");
+
+
 	}
 
 }
