@@ -4,6 +4,7 @@ public class invoice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//variable declarations
 		String sold_to="C026-01-0917/2022", address="Bradley Kahoro";
 		String date="28/04/2020";
@@ -16,6 +17,7 @@ public class invoice {
 		double vat_tax= 0.16*subttl_amt;
 		double total_amt=vat_tax+subttl_amt;
 		
+		//output formatting
 		System.out.println("**************************Adamson Computers Ltd*************************");
 		System.out.println("#99 ACS Building Gilmore Ave. New Mla.. Quezon City  *  Tel. No:123-4567");
 		System.out.println("                 VAT REG. TIN 098-765-4321-0000");
