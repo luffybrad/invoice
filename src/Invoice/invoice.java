@@ -1,9 +1,8 @@
 package Invoice;
-
 public class invoice {
-
 	public static void main(String[] args) {
-		String sold_to="C026-01-0903/2022", address="Collins Waweru";
+		String sold_to="C026-01-0903/2022";
+		String address="Collins Waweru";
 		String date="28/04/2020";
 		String contact_num="0100100100";
 		int quantity1=4, quantity2=10, quantity3=9, quantity4=10;
@@ -11,8 +10,8 @@ public class invoice {
 		int unit_price1=20, unit_price2=50, unit_price3=30, unit_price4=80;
 		float amount1=quantity1*unit_price1, amount2=quantity2*unit_price2, amount3=quantity3*unit_price3, amount4=quantity4*unit_price4;
 		float subtotal_amount=amount1+amount2+amount3+amount4;
-		double vat_tax= 0.16*subtotal_amount;
-		double total_amount=vat_tax+subtotal_amount;
+		double vat= 0.16*subtotal_amount;
+		double total_amount=vat+subtotal_amount;
 		System.out.println("**************************Adamson Computers Ltd*************************");
 		System.out.println("#99 ACS Building Gilmore Ave. New Mla.. Quezon City  *  Tel. No:123-4567");
 		System.out.println("                 VAT REG. TIN 098-765-4321-0000");
@@ -32,12 +31,10 @@ public class invoice {
 		System.out.println("=========================================================================");
 		System.out.println("                                          |Sub Total    |"+String.format("%.2f",subtotal_amount));
 		System.out.println("                                          ===============================");
-		System.out.println("                                          |VAT(16%)     |"+String.format("%.2f",vat_tax));
+		System.out.println("                                          |VAT(16%)     |"+String.format("%.2f",vat));
 		System.out.println("                                          ===============================");
 		System.out.println("                                          |Total Amount |"+String.format("%.2f",total_amount));
 		System.out.println("                                          ===============================");
-
-
 	}
 
 }
